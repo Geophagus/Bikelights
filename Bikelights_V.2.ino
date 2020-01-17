@@ -64,7 +64,7 @@ if (digitalRead(toggleDisco) == LOW){
     }
 }
 else {
-  
+  for (int o = 0; o < 35; o ++) {                             //runs loop 35x to alllow fill effect on indicators
   if (digitalRead(toggleFore) == LOW) {
     fore = 1;}
   else{ fore = 0;}
@@ -86,10 +86,14 @@ else {
   strip.fill(strip.Color(fore*255,fore*255,fore*255),55,35);
   strip.fill(strip.Color(255*aft,0,0),0,18); 
   strip.fill(strip.Color(255*aft,0,0),128,18);
-  strip.fill(strip.Color(star*255,star*69,0),91,36);
-  strip.fill(strip.Color(port*255,port*69,0),18,36);
-  
-  
+ 
+  strip.setPixelColor(star*255,star*69,0,126 - o);
+  strip.setPixelColor(port*255,port*69,0,18 + o);
+    
+  strip.show();
+  delay(50);
+  }
+ 
   strip.show();
   delay(300);
   
