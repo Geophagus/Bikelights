@@ -1,8 +1,9 @@
 /*
- V2.0
-  Bike lights controlled with switches
-  Disco, Fore White, Aft Red, Port & Starboard flashing Orange.
-  14 January 2019
+  V2 14 Jan 2020
+     Bike lights controlled with switches
+     Disco, Fore White, Aft Red, Port & Starboard flashing Orange.
+  v2.1 17 Jan 2019
+     Improved indicator fill pattern
 */
 
 #include <Adafruit_NeoPixel.h>
