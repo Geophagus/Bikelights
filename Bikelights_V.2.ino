@@ -87,15 +87,15 @@ else {
   strip.fill(strip.Color(255*aft,0,0),0,18); 
   strip.fill(strip.Color(255*aft,0,0),128,18);
  
-  strip.setPixelColor(star*255,star*69,0,126 - o);
-  strip.setPixelColor(port*255,port*69,0,18 + o);
+  strip.setPixelColor(126 -o, star*255,star*69,0);
+  strip.setPixelColor(18 + o, port*255,port*69,0);
     
   strip.show();
-  delay(50);
+  delay(15);
   }
  
   strip.show();
-  delay(300);
+  delay(200);
   
 // set port & starboard sections to off for flash
   strip.fill(strip.Color(0,0,0),91,36);
