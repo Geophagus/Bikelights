@@ -7,3 +7,5 @@ V1. - Simple functionality: Front white, rear red, left and right flashing orang
 
 V2. - Added rainbow function
 V2.1 - Improved indicator fill pattern
+
+V3 - Sorted functions
